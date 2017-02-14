@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fitnesse.parallel</groupId>
+    <artifactId>fitnesse</artifactId>
+    <packaging>pom</packaging>
+    <version>1.1-SNAPSHOT</version>
+    <modules>
+        <module>fitnesse-parallel</module>
+    </modules>
+
+    <name>Tests Fitnesse Parallel</name>
+    <description>Fitnesse to make parallel</description>
+
+    <inceptionYear>2016</inceptionYear>
+    <organization>
+        <name>intuit</name>
+        <url>http://Tests.com</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <id>ykhandelwal</id>
+            <name>Yogesh_Khandelwal</name>
+
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>+5.30</timezone>
+        </developer>
+    </developers>
+
+    <properties>
+        <!-- For MapStruct to kicks in while compiling the source file -->
+        <m2e.apt.activation>jdt_apt</m2e.apt.activation>
+        <!-- compiler settings -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <!-- plugins versions -->
+        <org.mapstruct.version>1.1.0.CR1</org.mapstruct.version>
+        <maven.compiler.plugin.version>3.5.1</maven.compiler.plugin.version>
+        <maven.resources.plugin.version>2.7</maven.resources.plugin.version>
+        <maven.clean.plugin.version>2.6.1</maven.clean.plugin.version>
+        <maven.jar.plugin.version>2.5</maven.jar.plugin.version>
+        <maven.surefire.plugin.version>2.18.1</maven.surefire.plugin.version>
+        <maven.install.plugin.version>2.5.2</maven.install.plugin.version>
+        <maven.deploy.plugin.version>2.8.2</maven.deploy.plugin.version>
+        <maven.source.plugin.version>2.4</maven.source.plugin.version>
+        <maven.versions.plugin.version>2.2</maven.versions.plugin.version>
+        <maven.scm.plugin.version>1.8.1</maven.scm.plugin.version>
+        <maven-enforcer-plugin.version>1.3.1</maven-enforcer-plugin.version>
+        <maven.assembly.plugin.version>2.6</maven.assembly.plugin.version>
+        <maven.build.helper.plugin.version>1.10</maven.build.helper.plugin.version>
+        <maven.aspectj.version>1.8</maven.aspectj.version>
+        <maven.git.commit.id.version>2.2.1</maven.git.commit.id.version>
+        <maven.spring.boot.version>1.4.1.RELEASE</maven.spring.boot.version>
+        <maven.rpm.plugin.version>2.1.5</maven.rpm.plugin.version>
+        <maven.java.doc.version>2.10.3</maven.java.doc.version>
+        <maven.source.version>3.0.0</maven.source.version>
+        <maven.exec.plugin.version>1.5.0</maven.exec.plugin.version>
+        <!-- dependencies -->
+
+        <!-- dependencies -->
+        <spring.boot.version>1.4.1.RELEASE</spring.boot.version>
+        <tomcat.version>8.5.5</tomcat.version>
+        <spring.version>4.3.3.RELEASE</spring.version>
+        <sl4j.version>1.7.21</sl4j.version>
+        <janio.version>3.0.6</janio.version>
+        <qos.logback.version>1.1.7</qos.logback.version>
+        <logstash.log.version>4.7</logstash.log.version>
+        <jersey.version>2.23.2</jersey.version>
+        <servlet.version>4.0.0-b01</servlet.version>
+        <jsoup.version>1.10.1</jsoup.version>
+        <Tests-rest-client.version>1.0.1</Tests-rest-client.version>
+        <jackson.version>2.8.3</jackson.version>
+        <swagger.version>1.5.9</swagger.version>
+        <common.beanutils.version>1.9.3</common.beanutils.version>
+        <javax.validation.version>1.1.0.Final</javax.validation.version>
+        <hibernate.jpa.version>1.0.0.Final</hibernate.jpa.version>
+        <jersey.common.version>1.1.2</jersey.common.version>
+        <newrelic.java.agent.version>3.32.0</newrelic.java.agent.version>
+        <guva.version>20.0-rc1</guva.version>
+        <commons.lang3.version>3.4</commons.lang3.version>
+        <cache.api.version>1.0.0</cache.api.version>
+        <ehcache.version>3.1.3</ehcache.version>
+        <hibernate.version>5.2.1.Final</hibernate.version>
+        <Tests.hibernate.common.version>1.0.6-SNAPSHOT</Tests.hibernate.common.version>
+        <dbcp.version>9.0.0.M9</dbcp.version>
+        <mysql.version>6.0.3</mysql.version>
+        <common.collections>4.1</common.collections>
+        <hibernate.validator.version>5.3.0.Final</hibernate.validator.version>
+        <commons.logging.version>1.2</commons.logging.version>
+
+        <aspectj.version>1.8.9</aspectj.version>
+        <reflection.version>0.9.10</reflection.version>
+
+        <!-- Web Jars -->
+        <webjars.locator.version>0.30</webjars.locator.version>
+        <!--<angular.version>2.0.0-alpha.22</angular.version>-->
+        <angular.version>1.5.8</angular.version>
+        <bootstrap.version>3.3.7</bootstrap.version>
+
+        <!-- Testing dependencies -->
+        <junit.version>4.12</junit.version>
+        <equals.verifier.version>2.1.6</equals.verifier.version>
+        <mockito.version>2.0.42-beta</mockito.version>
+        <assertj.version>1.0.0m1</assertj.version>
+        <json.assert.version>1.3.0</json.assert.version>
+
+    </properties>
+    <scm>
+        <connection>scm:git:git:github.intuit.com/jpradhan/Tests-devtools.git</connection>
+        <url>https://github.intuit.com/jpradhan/Tests-devtools</url>
+    </scm>
+
+    <prerequisites>
+        <maven>3.2.5</maven>
+    </prerequisites>
+    <repositories>
+        <repository>
+            <id>Tests-release</id>
+            <url>http://sonarnexus.pre-prod-aws.Tests.com/nexus/content/repositories/public/</url>
+        </repository>
+        <repository>
+            <id>Tests-snapshot</id>
+            <url>http://sonar-nexus-elb-473187287.us-west-2.elb.amazonaws.com/nexus/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <url>http://sonar-nexus-elb-473187287.us-west-2.elb.amazonaws.com/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>nexus-release</id>
+            <url>http://sonar-nexus-elb-473187287.us-west-2.elb.amazonaws.com/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+    <dependencyManagement>
+        <dependencies>
+
+
+            <dependency>
+                <groupId>org.jsoup</groupId>
+                <artifactId>jsoup</artifactId>
+                <version>${jsoup.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sun.jersey</groupId>
+                <artifactId>jersey-client</artifactId>
+                <version>1.19.3</version>
+            </dependency>
+      </dependencies>
+
+
+
+    </dependencyManagement>
+    <build>
+        <pluginManagement>
+          </pluginManagement>
+                <!-- Maven Version Enforcer Plugin -->
+
+    </build>
+
+</project>
