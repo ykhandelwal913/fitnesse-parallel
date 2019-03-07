@@ -15,9 +15,11 @@ min and max value is to be decided based on the hardware it is going to run. if 
 ex: java -jar fitnesse-parallel-1.1-SNAPSHOT.jar http://${IP_ADDRESS}:8888/FitNesse.${Suite}.RestApis.${ClientType}.${Environment} 50 60
 ```
 This is to generate the testresults xml:
-
+```
 mvn exec:java -Dexec.mainClass="XMLConcat" -Dexec.args="${FitnesseRoot}/files/testResults ${Environment}"
-
+```
 This will genearete a nice html report.
-
+```
 mvn -PreportMerge xml:transform -DFitNesseRoot=${FitnesseRoot} 
+
+```
